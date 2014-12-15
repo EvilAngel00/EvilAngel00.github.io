@@ -91,7 +91,8 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: black;
+    text-shadow: 0 0 15px white;
 }
 
 .navbar-custom .nav li.active {
@@ -100,6 +101,8 @@ a:focus {
 }
 
 .navbar-custom .nav li a {
+    color: black;
+    text-shadow: 0 0 15px white;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -109,7 +112,7 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(160,160,160,.3);
 }
 
 @media(min-width:767px) {
@@ -254,11 +257,13 @@ a:focus {
     padding-top: 100px;
 }
 
-.download-section {
+.features-section {
     width: 100%;
+    height: 900px;
+    margin-top: -200px;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(../img/features-bg.jpg) no-repeat top center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -266,10 +271,23 @@ a:focus {
     -o-background-size: cover;
 }
 
-#map {
+.website-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/empty-desks.jpg) no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#footer {
     width: 100%;
     height: 200px;
     margin-top: 100px;
+    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
 }
 
 @media(min-width:767px) {
@@ -277,11 +295,11 @@ a:focus {
         padding-top: 250px;
     }
 
-    .download-section {
+    .website-section {
         padding: 100px 0;
     }
 
-    #map {
+    #footer {
         height: 400px;
         margin-top: 250px;
     }
@@ -362,4 +380,8 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+.top-nav-collapse {
+    background-color: white;
 }
